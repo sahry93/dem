@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://dutaenergi.co.id/sitemap.xml",
+    // Sesuaikan dengan domain Anda
+    sitemap: "https://dutaenergi.com/sitemap.xml",
   };
 }

@@ -57,7 +57,7 @@ export default function AboutPage() {
       {/* MISSION & VISION SECTION */}
       <section className="py-12 lg:py-24">
         <div className="container-custom">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 items-start">
             {/* Vision Card */}
             <div className="group p-10 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-500">
               <div className="w-14 h-14 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition-colors">
@@ -66,11 +66,27 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
                 Our Vision
               </h2>
-              <p className="text-slate-600 leading-relaxed">
-                To be the most trusted and preferred partner in the energy and
-                infrastructure sector, recognized for our excellence, integrity,
-                and sustainable approach in every project we handle.
-              </p>
+              <ul className="text-slate-600 leading-relaxed space-y-4 list-disc pl-5 marker:text-sky-600">
+                <li>
+                  Our goal is to play a significant role in advancing the energy
+                  technology and infrastructure industries.
+                </li>
+                <li>
+                  Our dedication lies in utilizing state-of-the-art technologies
+                  in the sectors of mechanical and electrical building to create
+                  a sustainable future.
+                </li>
+                <li>
+                  Our objective is to be innovators and pioneers in the creation
+                  of technologically advanced, sustainable, and efficient built
+                  environments by merging our knowledge in both fields.
+                </li>
+                <li>
+                  Our vision entails a constructive shift in the construction
+                  and management of energy, contributing significantly to global
+                  development.
+                </li>
+              </ul>
             </div>
 
             {/* Mission Card */}
@@ -81,12 +97,43 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
                 Our Mission
               </h2>
-              <p className="text-slate-600 leading-relaxed">
-                To deliver innovative and reliable engineering solutions that
-                empower our clients. We are committed to high standards of
-                safety, disciplined execution, and contributing to national
-                development.
-              </p>
+              <ul className="text-slate-600 leading-relaxed space-y-4 list-disc pl-5 marker:text-sky-600">
+                <li>
+                  Integrate mechanical-electrical systems and construction using
+                  a holistic approach to produce robust, effective, and
+                  functional built environments.
+                </li>
+                <li>
+                  Encourage ongoing sustainable innovation in mechanical and
+                  electrical technology and construction to develop systems that
+                  are both energy- and environmentally-efficient.
+                </li>
+                <li>
+                  Create enduring strategic alliances with stakeholders,
+                  business partners, and clients in order to develop and put
+                  into practice solutions that can handle upcoming difficulties.
+                </li>
+                <li>
+                  To ensure a workforce that is aware and skilled, offer
+                  education and training programs that are designed to improve
+                  understanding of the mechanical-electrical and construction
+                  sectors.
+                </li>
+                <li>
+                  Provide creative and sustainable energy solutions to meet
+                  changing energy needs while reducing the negative effects on
+                  the environment.
+                </li>
+                <li>
+                  Make quality and safety the first priorities in every project
+                  so that the results not only meet but also surpass the
+                  expectations of your clients.
+                </li>
+                <li>
+                  Actively contribute to the community by undertaking projects
+                  that have positive social and economic impacts.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -104,7 +151,7 @@ export default function AboutPage() {
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 We believe that engineering is more than just technical
                 execution; it is about building trust and delivering enduring
-                solutions for Indonesia's energy infrastructure.
+                solutions for Indonesia energy infrastructure.
               </p>
 
               <div className="grid gap-6 sm:grid-cols-2">
