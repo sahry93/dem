@@ -46,4 +46,11 @@ export const services: Service[] = [
     description:
       "Providing integrated logistics and supply chain management solutions to ensure efficient distribution and handling of industrial equipment and materials.",
   },
+  {
+    slug: "dem-rental",
+    title: "DEM Rental",
+    icon: "Truck",
+    description:
+      "Offering flexible rental solutions for industrial equipment and machinery, providing PLN operations with access to high-quality tools and resources without the need for long-term ownership.",
+  },
 ];
