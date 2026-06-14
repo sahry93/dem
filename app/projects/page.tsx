@@ -54,10 +54,15 @@ export default function ProjectsPage() {
               <span className="text-sky-500">EXCELLENCE.</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-xl leading-relaxed font-medium">
-              Showcasing our proven track record in delivering high-impact
-              engineering, strategic procurement, and integrated operational
-              support. We transform complex industrial challenges into reliable
-              realities across the Indonesian archipelago.
+              the procurement projects entail the acquisition of a wide variety
+              of utility and electrical equipment for PT PLN (Persero) and its
+              regional entities. This comprises testing instruments, mobile
+              units, communication systems, thermovision apparatus, smart
+              distribution components, and ultrasonic detectors, among other
+              electrical devices. These projects, which address issues including
+              communication, measurement, and general system maintenance, are
+              meant to improve the electrical infrastructures efficiency,
+              dependability, and safety.
             </p>
           </div>
         </div>

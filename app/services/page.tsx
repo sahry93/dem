@@ -1,19 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/data/services";
 import ServiceRental from "@/components/ServiceRental";
+import OurPartners from "@/components/OurPartners";
 import * as LucideIcons from "lucide-react";
+import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "Services | Duta Energi",
-  description:
-    "High-quality engineering solutions and operational support for demanding projects.",
-  openGraph: {
-    title: "Our Services | Duta Energi",
-    description:
-      "Explore our comprehensive engineering solutions and operational support for various industries.",
-    images: ["/images/opengraph-default.jpg"], // Ganti dengan gambar OG yang relevan
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 },
   },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 export default function ServicesPage() {
@@ -29,6 +34,7 @@ export default function ServicesPage() {
             fill
             priority
             className="object-cover"
+            sizes="100vw"
           />
           {/* Overlay: Dark gradient for text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-800/40"></div>
@@ -56,13 +62,20 @@ export default function ServicesPage() {
       {/* SERVICES GRID */}
       <section className="pb-24">
         <div className="container-custom -mt-20 relative z-20">
-          <div className="grid gap-6 md:grid-cols-3">
+          <motion.div
+            className="grid gap-6 md:grid-cols-3"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
             {services.map((s) => {
               const IconComponent =
-                LucideIcons[s.icon] || LucideIcons.HelpCircle;
+                (LucideIcons as any)[s.icon] || LucideIcons.HelpCircle;
               return (
-                <div
+                <motion.div
                   key={s.slug}
+                  variants={itemVariants}
                   className="group flex flex-col p-8 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-100 hover:border-sky-500/50 transition-all duration-500"
                 >
                   <div className="flex-grow">
@@ -84,10 +97,10 @@ export default function ServicesPage() {
                       className="group-hover/link:translate-x-1 transition-transform"
                     />
                   </Link>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -107,6 +120,9 @@ export default function ServicesPage() {
           <ServiceRental />
         </div>
       </section>
+
+      {/* OUR PARTNERS */}
+      <OurPartners />
     </div>
   );
 }

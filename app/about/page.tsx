@@ -33,7 +33,7 @@ export default function AboutPage() {
             priority
             className="object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/10 to-slate-30" />
         </div>
 
         <div className="container-custom relative z-10">
@@ -46,9 +46,21 @@ export default function AboutPage() {
               Infrastructure
             </h1>
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-              PT. Duta Energi Muliatama provides comprehensive mechanical
-              engineering and contracting solutions across Indonesia with a
-              focus on quality and safety.
+              PT. Duta Energi Muliatama was established in 2015 and is a
+              provider of mechanical engineering solutions and dynamic
+              contracting services. With a unique blend of mechanical
+              engineering and construction experience, we put innovation and
+              sustainability first while providing excellent services. Our team
+              of highly qualified specialists upholds the highest standards of
+              quality and honesty in every project, bringing a lot of expertise
+              to the table. We are dedicated to being leaders in the provision
+              of cutting-edge mechanical and construction solutions that have a
+              beneficial influence. Our goal is to provide unmatched service by
+              fusing knowledge with the newest technologies, providing value to
+              each client along the way. Our objective is to use cutting-edge
+              technology to create sustainable surroundings. At PT. Duta Energi
+              Muliatama, we work together as a passionate team committed to
+              completing exceptional projects.
             </p>
           </div>
         </div>
