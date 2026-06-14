@@ -3,7 +3,7 @@ import { projects } from "@/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Ganti dengan domain asli Anda
-  const baseUrl = "https://dutaenergi.com";
+  const baseUrl = "https://dutaenergi.co.id";
 
   // Generate URL untuk setiap project secara dinamis
   const projectEntries = projects.map((project) => ({
