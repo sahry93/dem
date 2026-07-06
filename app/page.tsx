@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Subsidiaries from "@/components/Subsidiaries";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import CTA from "@/components/CTA";
@@ -10,6 +11,7 @@ export default function HomePage() {
     <>
       <Hero />
       <About />
+      <Subsidiaries />
       <Services />
       <OurPartners />
       <Projects />
