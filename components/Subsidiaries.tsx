@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import {
-  Globe2,
-  ExternalLink,
-} from "lucide-react";
+import { motion, cubicBezier } from "framer-motion";
+import { Globe2, ExternalLink } from "lucide-react";
 
 interface Subsidiary {
   name: string;
@@ -78,7 +75,8 @@ const subsidiaries: Subsidiary[] = [
     name: "PT Duta Persada Power",
     shortName: "Duta Persada Power",
     href: "https://www.persadapower.co.id",
-    logoUrl: "https://www.persadapower.co.id/assets/front/img/6723440089eb3.png",
+    logoUrl:
+      "https://www.persadapower.co.id/assets/front/img/6723440089eb3.png",
     description:
       "Provider of large-scale electrical solutions, encompassing power plant construction, power transmission, and operation and maintenance services for industrial electrical systems.",
     accent: "from-amber-500 to-orange-600",
@@ -102,7 +100,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.55, ease: cubicBezier(0.22, 1, 0.36, 1) },
   },
 };
 
@@ -134,7 +132,9 @@ export default function Subsidiaries() {
             Our Subsidiaries
           </h2>
           <p className="mt-5 mx-auto max-w-2xl leading-8 text-slate-600">
-            DEM Holding oversees five subsidiaries operating across strategic sectors, ranging from energy and maritime construction to international trade.
+            DEM Holding oversees five subsidiaries operating across strategic
+            sectors, ranging from energy and maritime construction to
+            international trade.
           </p>
         </motion.div>
 
@@ -168,7 +168,11 @@ export default function Subsidiaries() {
                     className={`relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${sub.iconBg} ${sub.iconColor} transition-all duration-500 group-hover:scale-110 overflow-hidden`}
                   >
                     {sub.logoUrl ? (
-                      <img src={sub.logoUrl} alt={`${sub.shortName} logo`} className="w-10 h-10 object-contain" />
+                      <img
+                        src={sub.logoUrl}
+                        alt={`${sub.shortName} logo`}
+                        className="w-10 h-10 object-contain"
+                      />
                     ) : (
                       sub.icon && <sub.icon size={26} />
                     )}
